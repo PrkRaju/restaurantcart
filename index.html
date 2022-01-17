@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+    
+    <title>Cheesy Fast Food</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel = "icon" href = "logo.png"  type = "image_icon">
+    
+</head>
+<body onload="checkCookies()">
+
+	<script>
+	function checkCookies()
+	{
+	if (navigator.cookieEnabled==true)
+		{
+		alert("Cookies are enabled")
+		}
+	else
+		{
+		alert("Cookies are not enabled")
+		}
+	}
+
+	</script>
+
+	
+		<div id="form">
+			<form name="nform" onsubmit="javascript:alert('Your Reservation has been accepted!!');">
+			<div><img id="logo" src="logo.png" alt="Logo"></div>
+			<div id="welcome"><label>WELCOME!</label></div>
+			<div id="about"><label>We are providing fresh fast food on 50% discount, which cares your health as well as money. There is no compromise in Taste which makes you happy and healthy. All the foods are halal here.</label></div>
+			<div id="reserve">
+				<label><u><p style="text-align: center;">RESERVATIONS</p></u><br></label>
+				Name: <input id="name" type="text" name="fname" onkeypress="return (event.charCode > 64 && 
+				event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" 
+				placeholder="name" required>
+				Date: <input type="date" name="Date" required>
+				Phone No: <input type="" name="number" maxlength="10" onkeypress="return (event.charCode > 47 && event.charCode < 58)" required>
+				Time: <input type="Time" name="Time" required><br>
+				Event: <select name="Event" required>
+					
+					<option value="Birthday" selected="selected">Birthday</option>
+					<option value="Reception">Reception</option>
+					<option value="Wedding">Wedding</option>
+					<option value="Other">Other</option>
+				</select></br>
+				Members:<input id="members" type="number" name="Members" required>
+				Advance:<select id="Advance" name="Advance" required>
+					<option>10₹</option>
+					<option>100₹</option>
+					<option>1000₹</option>
+					<option>10000₹</option>
+					
+				</select>
+				<audio src="audio.mpeg" controls></audio><br>
+				</br>
+				
+				<div class="submit">
+					<input type="submit" value="Submit"></button>
+				</div>
+			</div>
+			</form>
+		</div>
+
+		<div id="bar">
+			<div id="menu"><a href="neon.html"><label>WELCOME</label></a></div>
+			<div id="home" style="color: red; font-family: calibri; font-size: 18pt; text-align: center;"><label>HOME</label></div>
+			<div id="menu"><a href="m menu.html"><label>MENU</label></a></div>
+			<div id="contact"><a href="contact_us.html"><label>CONTACT US</label></a></div>
+			<div id="sign"><a href="sign_up.html"><label>SIGN UP</label></a></div>
+			<div id="menu"><a href="Location.html"><label>LOCATION</label></a></div>
+		</div>
+
+		<div id="deals">
+			<h1 style="color: #ff9800; font-family: calibri; text-align: center; font-size: 25pt; text-transform: uppercase;">Deal of the day</h1>
+			<div id="f_deal">
+
+				<img id="f_pic" src="1.png">
+				<div id="over">
+					<p id="of"> Night special<br>2 Malpua<br>1 Plate Arroz con gandules <br>2 Regular Pepsi<br>2 Cornetto cones<br><del> Price 799₹</del><br><ins>Only 399₹</ins></p>
+				</div>
+			</div>
+
+			<div id="s_deal">
+				<img id="s_pic" src="family snack.png">
+				<div id="over2">
+					<p id="of"> 2 Zinger Burger<br>2 Coke<br>1 French fries<br>2 Qtr Sandwich<br>2 Ice cream</br><del>Price 900₹</del><br><ins>Only 499₹</ins></p>
+				</div>
+			</div>
+
+		</div>
+	 </div> 
+
+    
+</body>
+</html>
